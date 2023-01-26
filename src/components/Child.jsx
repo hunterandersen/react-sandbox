@@ -10,7 +10,7 @@ class Child extends Component {
 
     return (
       <div>
-        <h1>{`Hi, This is React`}</h1>
+        <h2>{`Favorite Color: ${this.props.favColor}`}</h2>
         <p>{this.props.text}</p>
       </div>
     );
