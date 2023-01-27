@@ -22,6 +22,7 @@ export default class Form extends Component {
   }
 
   render() {
+
     return (
       <form onSubmit={(e) => this.props.handleSubmit(e, this.state.inputTextStr)}>
         <label htmlFor="inputText">Input an Item</label>

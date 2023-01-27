@@ -1,0 +1,8 @@
+body{
+    background-color: bisque;
+}
+
+.superheroContainer{
+    display: flex;
+    gap: 1rem;
+}

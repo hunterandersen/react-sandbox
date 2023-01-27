@@ -13,10 +13,12 @@ class App extends Component {
       shoppingList: []
     }
 
+    //Bind the correct version of "this" to the function
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit(event, newListItem){
+    //Always prevent the default submit event's action from happening
     event.preventDefault();
 
     this.setState({
