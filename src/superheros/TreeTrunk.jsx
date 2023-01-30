@@ -46,10 +46,10 @@ export default class TreeTrunk extends Component {
         <h1>Superheros</h1>
         {this.state.superheroList.map((heroObject) => {
           const { id, slug } = heroObject;
-          return <TreeBranch 
-                    hero={heroObject} 
-                    key={`${id}-${slug}`}
-                />;
+          return <TreeBranch
+            hero={heroObject}
+            key={`${id}-${slug}`}
+          />;
         })}
       </div>
     );
