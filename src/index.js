@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 //import App from './shoppingList/App';
-import TreeTrunk from './superheros/TreeTrunk';
+//import TreeTrunk from './superheros/TreeTrunk';
+import App from './functional-heros/App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-    <TreeTrunk />
+    <App />
   // </React.StrictMode>
 );
 
