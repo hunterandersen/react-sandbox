@@ -15,9 +15,19 @@ export default function App() {
   const controller = new AbortController();
 
   useEffect(() => {
+    //componentDiDMount
+    //componentDidUpdate
     getHeroData();
+    //componentWillUnmount
     return () => {
-        controller.abort();
+        //React Strict Mode will force the component to unmount once
+        //in order to more robustly check that your app is functioning correctly.
+        //However, that does slightly break the intended purpose of this
+        //controller.abort line of code. So, we'll only run this line, if we're not
+        //currently running the app in development mode.
+        if (process.env.NODE_ENV !== "development"){
+            controller.abort();
+        }
     }
   }, []);
 
